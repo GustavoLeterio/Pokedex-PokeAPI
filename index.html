@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke API</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main class="pokedex">
+        <section class="pokedex__info">
+            <ul class="info__details">
+                <li class="details__name">Nome: <span class="pokemon-name" id="pokemonName">?</span></li>
+                <li class="details__height">Altura: <span class="pokemon-height" id="pokemonHeight">?</span></li>
+                <li class="details__weight">Peso: <span class="pokemon-weight" id="pokemonWeight">?</span></li>
+                <li class="details__type">Tipo: <span class="pokemon-type" id="pokemonType">?</span></li>
+            </ul>
+        </section>
+        <h1 class="pokedex__pokemon-data">
+            <span class="pokemon-data__number" id="pokemonScreenNumber"></span>
+            -
+            <span class="pokemon-data__name" id="pokemonScreenName"></span>
+        </h1>
+        <form class="pokedex__form" id="pokedexForm">
+            <input type="text" name="Arguments" id="args" placeholder="Pesquise!" autocomplete="off" spellcheck="false">
+            <button name="Search" id="search"><img src="assets/search-icon.webp" alt="Search Icon"></button>
+        </form>
+        <button class="pokedex__previous-button" name="previous" id="previous">prev</button>
+        <button class="pokedex__next-button" name="next" id="next">next</button>
+        <img src="assets/ambients/placeholder.webp" alt="Pokemon Ambient" class="pokedex__ambient" id="pokemonAmbient">
+        <img src="" alt="Pokemon Image" class="pokedex__pokemon-sprite" id="pokemonSprite">
+        <img src="assets/pokedex/overlay.webp" alt="Pokedex Overlay" class="pokedex__overlay">
+
+    </main>
+</body>
+
+</html>
